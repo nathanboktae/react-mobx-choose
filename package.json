@@ -1,8 +1,16 @@
 {
   "name": "react-mobx-chooose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight and powerful select alternative to let users choose items from many options",
   "main": "choose.js",
+  "author": "Nathan Black <nathan@nathanblack.org>",
+  "license": "ISC",
+  "dependencies": {
+    "aria-listbox": "^0.2.0",
+    "mobx": "^3.2.2",
+    "mobx-react": "^4.2.2",
+    "react": "^15.6.1"
+  },
   "devDependencies": {
     "chai": "^4",
     "chai-dom": "^1.0.0",
@@ -16,7 +24,7 @@
     "sinon-chai": "^2.8.0"
   },
   "scripts": {
-    "test": "./slimerjs/slimerjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js tests/tests.html && (node -e \"require('grunt').tasks(['test']);\" || true)"
+    "test": "./slimerjs/slimerjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js tests/tests.html"
   },
   "keywords": [
     "select",
@@ -26,14 +34,13 @@
     "mobx",
     "observable",
     "react-component",
-    "react-mobx-component"
+    "react-mobx-component",
   ],
-  "author": "Nathan Black <nathan@nathanblack.org>",
-  "license": "ISC",
-  "dependencies": {
-    "aria-listbox": "^0.2.0",
-    "mobx": "^3.2.2",
-    "mobx-react": "^4.2.2",
-    "react": "^15.6.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanboktae/react-mobx-choose.git"
+  },
+  "bugs": {
+    "url": "http://github.com/nathanboktae/react-mobx-choose/issues"
   }
 }
