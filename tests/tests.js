@@ -134,9 +134,10 @@ describe('react mobx choose', function() {
       textNodesFor('.choose-choices ul li').should.deep.equal(['blue', 'brown', 'red', 'pink'])
     })
 
-    it('should use the aria-listbox role', function() {
-      testSetup()
+    it('should use the aria-listbox role and provided className', function() {
+      testSetup({ className: 'myclass' })
       testEl.should.have.attribute('role', 'listbox')
+        .and.have.class('myclass')
       Array.prototype.forEach.call(testEl.querySelectorAll('li'), function(el) {
         el.should.have.attr('role', 'option')
       })

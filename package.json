@@ -1,5 +1,5 @@
 {
-  "name": "react-mobx-chooose",
+  "name": "react-mobx-choose",
   "version": "0.0.2",
   "description": "A lightweight and powerful select alternative to let users choose items from many options",
   "main": "choose.js",
@@ -34,7 +34,7 @@
     "mobx",
     "observable",
     "react-component",
-    "react-mobx-component",
+    "react-mobx-component"
   ],
   "repository": {
     "type": "git",

@@ -138,7 +138,7 @@
           el.querySelector('[name="choose-search"]').focus()
         }, 10)
       })
-      el.addEventListener('blur', comp.closeOnBlur.bind(comp))
+      el.addEventListener('blur', comp.closeOnBlur)
 
       el.addEventListener('keydown', function(e) {
         var code = e.keyCode || e.which,
@@ -305,7 +305,7 @@
         key: 'chooseroot',
         role: 'listbox',
         'aria-disabled': unwrap(this.props.disabled) ? 'true' : undefined,
-        className: this.optionsVisible ? 'choose-choices-open' : undefined
+        className: (this.props.className || '') + ' ' + (this.optionsVisible ? 'choose-choices-open' : ''),
       }, [
         e('div', {
           key: 'choose-match',
