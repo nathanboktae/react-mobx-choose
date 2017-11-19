@@ -735,6 +735,7 @@ describe('react mobx choose', function() {
       choices.one = ['a', 'b', 'c', 'd', 'e', 'f']
       choices.two = ['n', 'm', 'o', 'p', 'q', 'r']
       searchWrapper.style.display.should.equal('')
+      searchbox.should.have.attribute('type', 'search')
     })
 
     it('should allow showSearch to be an observable', function() {

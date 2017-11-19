@@ -321,6 +321,7 @@
           e('div', { className: 'choose-search-wrapper', style: { display: comp.showSearch.get() ? undefined : 'none' } }, [
             e('input', {
               name: 'choose-search',
+              type: 'search',
               value: comp.searchTerm,
               onChange: function(e) { comp.searchTerm = e.target.value },
               onKeyDown: function(e) { comp.searchTerm = e.target.value },
