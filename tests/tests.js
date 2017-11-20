@@ -135,9 +135,9 @@ describe('react mobx choose', function() {
     })
 
     it('should use the aria-listbox role and provided className', function() {
-      testSetup({ className: 'myclass' })
+      testSetup({ className: 'myclass', choices: people, selected: mobx.observable() })
       testEl.should.have.attribute('role', 'listbox')
-        .and.have.class('myclass')
+      testEl.should.have.class('myclass')
       Array.prototype.forEach.call(testEl.querySelectorAll('li'), function(el) {
         el.should.have.attr('role', 'option')
       })

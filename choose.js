@@ -318,9 +318,14 @@
             key: 'choose-match-child'
           })),
         e('div', { className: 'choose-choices', key: 'choose-choices', }, [
-          e('div', { className: 'choose-search-wrapper', style: { display: comp.showSearch.get() ? undefined : 'none' } }, [
+          e('div', {
+            className: 'choose-search-wrapper',
+            style: { display: comp.showSearch.get() ? undefined : 'none' },
+            key: 'sw'
+          }, [
             e('input', {
               name: 'choose-search',
+              key: 'choose-search',
               type: 'search',
               value: comp.searchTerm,
               onChange: function(e) { comp.searchTerm = e.target.value },
