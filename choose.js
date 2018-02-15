@@ -209,8 +209,8 @@
         if (selectProp) {
           this.props.selected.set(item[selectProp])
         }
-        this.optionsVisible = false
         this.el.focus()
+        this.optionsVisible = false
       }
     },
 
